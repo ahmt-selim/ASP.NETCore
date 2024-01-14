@@ -1,0 +1,36 @@
+﻿@* Yorum satırı*@
+
+<p>
+    @DateTime.Now <span>Şimdiki zaman paylaşıldı</span> 
+</p>
+
+@{
+    string name = "Ahmet Selim";
+    string surname = "Kısa";
+    int age = 27;
+
+    string fullname = $"{name} {surname}";
+
+}
+<p>
+    fullname: @fullname Soyad.
+</p>
+<p>
+    @{
+        if (name == "Ahmet Selim")
+        {
+            <ul>
+                <li>@name</li>
+                <li>@surname</li>
+                <li>@age</li>
+            </ul>
+        }
+        else
+        {
+<span>Eşleşme sağlanamadı!!</span>
+        }
+
+    }
+</p>
+
+@(name + " " + surname) @* Tek satırlık C# kodlarını bu şekilde yazbiliriz ma burada değişken tanımlayamayız.*@
