@@ -38,5 +38,19 @@ namespace PassingData.Controllers
 
             return View();
         }
+        public IActionResult UseTempData()
+        {
+            TempData["name"] = "Ahmet Selim";
+            return RedirectToAction("TempDataTest");//Kendi view ini göstermeden direkt TemDataTest sayfasına yönlendirme işlemi yapar.
+        }
+        public IActionResult TempDataTest()
+        {
+            TempData.Keep("name");//TempData key'ini uzatma yöntemi.
+            //Normalde TemData["name"] UseTempData() da doldurulup burada 1 kere kullanıldıktan sonra silinir ama bu yöntemle kullanımını uzatmış oluruz.
+            string userName = TempData["name"].ToString();
+            //TempData oluşturulduğu yerde kullanılmadan başka Actionda çağrıldığında hata verir.
+            //ve kullanıldığı actionda 1 kere kullanılır. 2. kez çağrıldığında hata verir.
+            return View();
+        }
     }
 }
