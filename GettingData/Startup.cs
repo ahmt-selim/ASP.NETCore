@@ -33,7 +33,7 @@ namespace GettingData
             {
                 //endpoints.MapDefaultControllerRoute();
 
-                endpoints.MapControllerRoute("CustomRoute", "{controller=Home}/{action=Index}/{id?}/{productname?}");
+                endpoints.MapControllerRoute("CustomRoute", "{controller=Home}/{action=Index}/{categoryname?}");
             });
         }
     }

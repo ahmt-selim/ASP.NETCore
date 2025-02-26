@@ -1,0 +1,16 @@
+﻿@using GettingData.Models
+@model List<Product>
+
+@if (ViewBag.Error != null)
+{
+    <h2>@ViewBag.Error</h2>
+}
+else
+{
+    <h2>Seçilen Ürünler</h2>
+    @foreach (Product item in @Model)
+    {
+        <li>@item.ProductName</li>
+    }
+    
+}
