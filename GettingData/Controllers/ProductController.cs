@@ -10,9 +10,10 @@ namespace GettingData.Controllers
         List<Product> products = new List<Product>()
         {
             new Product(){Id=1, ProductName="kitap", CategoryName = "kırtasiye"},
-            new Product(){Id=2, ProductName="leptop", CategoryName = "bilgisayar"},
+            new Product(){Id=2, ProductName="leptop", CategoryName = "elektronik"},
             new Product(){Id=3, ProductName="çanta", CategoryName = "giyim"},
-            new Product(){Id=4, ProductName="silgi", CategoryName ="kırtasiye"}
+            new Product(){Id=4, ProductName="silgi", CategoryName ="kırtasiye"},
+            new Product(){Id=4, ProductName="televizyon", CategoryName ="elektronik"}
         };
 
         public IActionResult GetAllProducts()

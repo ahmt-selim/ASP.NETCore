@@ -9,5 +9,10 @@ namespace GettingData.Controllers
         {
             return "Uygulama Çalışıyor";
         }
+        public string UseQueryString(string name, string surname)//Buradaki 'name' parametre adı query stringdeki ile aynı olmalı, sıralaması önemli değil.
+        {
+            return "Uygulama Çalışıyor1";
+        }
+
     }
 }
