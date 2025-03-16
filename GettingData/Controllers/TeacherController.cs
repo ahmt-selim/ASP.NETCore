@@ -25,7 +25,7 @@ namespace GettingData.Controllers
         }
         public IActionResult AddTeacherUsingTuple()
         {
-            (List<Branch>, Teacher) tuple = (branches, new Teacher());
+            (List<Branch>, Teacher) tuple = (branches, new Teacher()); //Burada gönderilen teacher nesnesi dolu olsaydı sayfa ilk açıldığında tag helper ile işaretli yerler dolu olarak gözükecekti.
             return View(tuple);//Tuple ile birden fazla veri view gönderilerek kullanılabilir.
         }
         [HttpPost]
