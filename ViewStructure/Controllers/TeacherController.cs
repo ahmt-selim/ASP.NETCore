@@ -19,7 +19,8 @@ namespace ViewStructure.Controllers
         }
         public IActionResult DeleteTeacher(int id)
         {
-            return View();
+            Teacher teacher = teachers.Find(n=>n.ID==id);
+            return View(teacher);
         }
     }
 }
