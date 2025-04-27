@@ -9,6 +9,9 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     ViewData["HasFooter"] = true;
 }
 <h2 style="text-align:center">Öğretmen Listesi</h2>
+
+@await Component.InvokeAsync("WorkChart", new {id=1});
+
 <div class="row row-cols-md-3">
     @foreach (Teacher item in Model)
     {
