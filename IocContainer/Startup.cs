@@ -19,7 +19,7 @@ namespace IocContainer
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddSingleton<ConsoleLogger>();
-            services.AddSingleton<ILog, TextLogger>();
+            services.AddScoped<ILog, TextLogger>();
             services.AddControllersWithViews();
         }
 
