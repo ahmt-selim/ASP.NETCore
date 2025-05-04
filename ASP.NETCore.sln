@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewStructure", "ViewStruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{F43866E4-92DC-45CB-83C1-C2D09CED019B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocContainer", "IocContainer\IocContainer.csproj", "{F684C918-877A-47C6-8AF8-6892E218BA98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F43866E4-92DC-45CB-83C1-C2D09CED019B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F43866E4-92DC-45CB-83C1-C2D09CED019B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F43866E4-92DC-45CB-83C1-C2D09CED019B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F684C918-877A-47C6-8AF8-6892E218BA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F684C918-877A-47C6-8AF8-6892E218BA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F684C918-877A-47C6-8AF8-6892E218BA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F684C918-877A-47C6-8AF8-6892E218BA98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
